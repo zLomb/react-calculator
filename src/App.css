@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body{
+    height: 100%;
+    background-color: rgb(202, 244, 247);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#brand {
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#main-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(110, 212, 195);
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 4px 4px 6px black;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#display {
+    margin: 50px auto auto auto;
+    height: 80px;
+    background-color: white;
+    text-align: right;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 45px;
+    padding: 5px;
+    overflow: auto;
+    border-radius: 10px;
+    border: solid 2px rgb(39, 149, 153);
 }
 
-.App-link {
-  color: #61dafb;
+.key {
+    background-color: rgb(207, 223, 230);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 5px;
+    user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.key:hover {
+    background-color: rgb(220, 245, 255);
+}
+
+#keypad {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#keypad-container {
+    width: 250px;
+    margin: auto;
 }
